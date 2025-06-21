@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Application</title>
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,1,0"
+    />
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- =======|CSS Style|============== -->
+    <link rel="stylesheet" href="/css/head.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+  </head>
+
+  <body>
+    <head>
+      <div class="header">
+        <div class="container">
+          <button id="toggle">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+
+          <div class="logo"><h1>K FLEX Bank</h1></div>
+          <div class="navbar">
+            <div class="menu">
+              <nav class="menu-item">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About Us</a>
+                <a href="/product.html">Products & Services</a>
+                <a href="/cerrs.html">Careers</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/productList.html">
+                  <p>Kh | En</p>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======|Mobile Navbar|======== -->
+        <nav id="navbar-mobile" class="active">
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/product.html">Products & Services</a>
+          <a href="/cerrs.html">Careers</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </head>
+
+    <div class="section1">
+      <div class="sub-container">
+        <fieldset>
+          <fieldset class="sub-fieldset">
+            <legend><h3 class="title">APPLICATION FORM</h3></legend>
+
+            <br />
+            <legend><h4>PERSONAL INFO</h4></legend>
+            <br />
+            <form action="" id="laonForm" class="form">
+              <label for="">First Name-Kh</label>
+              <input type="text" placeholder="Your First Name" />
+
+              <label for="">Last Name-Kh</label>
+              <input type="text" placeholder="Your Last Name" />
+
+              <label for="">First Name-En</label>
+              <input type="text" placeholder="Your Last Name" />
+
+              <label for="">Last Name-En</label>
+              <input type="text" placeholder="Your Last Name" />
+
+              <label for="">Gender </label>
+              <div class="field">
+                <select name="Male" id="">
+                  <option value="" disabled>---choose----</option>
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                  <option value="O">Others</option>
+                </select>
+              </div>
+              <label for="">Date of Birth</label>
+              <div class="field">
+                <input type="date" placeholder="Y" />
+              </div>
+
+              <label for="">Place of Birth</label>
+              <textarea
+                name=""
+                id=""
+                placeholder="Please input place of birth"
+              ></textarea>
+
+              <label for="">Current Address</label>
+              <textarea
+                name=""
+                id=""
+                placeholder="Please input your current address"
+              ></textarea>
+
+              <label for="">Phone Number</label>
+              <input
+                type="text"
+                placeholder="Your phone number, Example: 012 xxx xxx"
+              />
+
+              <label for="">Email</label>
+              <input
+                type="text"
+                placeholder="Your your mail address if any.."
+              />
+            </form>
+          </fieldset>
+          <fieldset class="sub-fieldset">
+            <legend><h4>APPLY FOR LOAN</h4></legend>
+            <form action="" id="laonForm" class="form">
+              <label for="">Loan Product </label>
+              <div class="field">
+                <select name="Male" id="">
+                  <option value="" disabled>---choose----</option>
+                  <option value="PL">Peranal Loan</option>
+                  <option value="HL">Housing Loan</option>
+                  <option value="CL">Car Loan</option>
+                </select>
+              </div>
+
+              <label for="">Apply Amount</label>
+              <input type="text" placeholder="How much you request?" />
+
+              <label for="">Tenurs</label>
+              <input
+                type="text"
+                placeholder="Loan Term in number of months..."
+              />
+
+              <label for="">Payment Mode </label>
+              <div class="field">
+                <select name="paymode" id="">
+                  <option value="" disabled>---choose----</option>
+                  <option value="PL">Declining</option>
+                  <option value="HL">Annuity</option>
+                  <option value="CL">Custom</option>
+                </select>
+              </div>
+
+              <label for="">Apply Now?</label>
+              <button type="submit" id="btn-submit">Submit</button>
+            </form>
+            <br />
+          </fieldset>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="logo">K-Flex Bank</div>
+      <div class="copy-right">Copyright © - 2025. K-Flex Bank of Cambodia.</div>
+      <div class="social-connect">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <!-- ======| JavaScript Section|===== -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

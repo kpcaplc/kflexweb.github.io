@@ -1,0 +1,107 @@
+.sub-container {
+  width: 1080px;
+  /* background-color: pink; */
+  margin: auto;
+  padding: 30px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #555;
+  margin: auto;
+}
+
+h4 {
+  color: #ff523b;
+}
+
+fieldset {
+  padding: 20px 10px;
+  width: 800px;
+  margin: auto;
+}
+
+.sub-fieldset {
+  border: none;
+  padding: 20px 10px;
+}
+
+form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 200px 500px;
+  gap: 20px;
+}
+
+.field {
+  /* max-width: 1000px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#laonForm label {
+  text-align: right;
+  color: #555;
+}
+
+#laonForm input,
+select,
+textarea {
+  /* width: 500px; */
+  padding: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+#laonForm input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #ff523b;
+  padding: 8px;
+}
+
+button {
+  padding: 8px;
+  width: 130px;
+  font-size: 16px;
+  background-color: #3b62ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+button:hover {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 786px) {
+  .sub-container {
+    width: 600px;
+    /* padding: 10px; */
+    /* background-color: pink; */
+  }
+
+  form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 5px;
+  }
+  #laonForm label,
+  input,
+  select {
+    text-align: left;
+    min-width: 300px;
+  }
+
+  fieldset {
+    padding: 30px;
+    width: auto;
+    margin: 30px;
+    border: none;
+  }
+}

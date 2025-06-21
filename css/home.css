@@ -1,0 +1,244 @@
+.section1 {
+  margin-top: 150px;
+}
+
+.row {
+  width: 1080px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sub-container {
+  /* background-color: pink; */
+  width: 1080px;
+  /* display: flex;
+  justify-items: center;
+  justify-content: space-between; */
+  margin: auto;
+  padding: 10px;
+}
+
+.col-1 {
+  max-width: 70%;
+  /* background-color: aqua; */
+}
+
+.col-2 {
+  display: block;
+  align-self: flex-start;
+  max-width: 30%;
+  margin-top: 30px;
+  /* background-color: aquamarine; */
+}
+
+.col-2 .phara {
+  color: #555;
+  /* text-align: justify; */
+}
+
+.navigation {
+  padding: 10px;
+  color: #ff523b;
+  text-align: right;
+}
+
+.navigation a {
+  max-width: 150px;
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px;
+}
+
+.trust h1 {
+  max-width: 90%;
+  font-size: 50px;
+  color: #555;
+}
+
+.introduce {
+  max-width: 70%;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.product-name h3 {
+  color: #ff523b;
+}
+
+/* section-2 */
+
+.section-2 {
+  margin: 50px auto;
+  padding: 80px 10px;
+  display: grid;
+  background-color: darkblue;
+  gap: 20px;
+  border-radius: 30px;
+}
+
+.grid {
+  max-width: 1400px;
+  display: grid;
+  /* background-color: pink; */
+  margin: auto;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px auto;
+}
+
+.personalLoan {
+  /* background-color: pink; */
+
+  gap: 10px;
+}
+
+.title {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.personalLoan h3,
+button {
+  margin-left: 50px;
+}
+
+.personalLoan h3 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.personalLoan p {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 22px;
+  margin-left: 50px;
+}
+
+.pic-pro1 {
+  /* background-color: aqua; */
+  align-items: center;
+  text-align: center;
+}
+
+.pic-pro1 img {
+  max-width: 600px;
+}
+
+.btn-learn {
+  background-color: #3bcbff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 22px;
+  color: #555;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn-learn:hover {
+  transform: scale(0.95);
+}
+
+.section-3 {
+  display: grid;
+}
+
+.title-3 {
+  font-size: 60px;
+  color: #555;
+  margin: 50px auto;
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.col-3 {
+  border: 1px solid salmon;
+  padding: 15px;
+}
+
+.grid-col-3 h3 {
+  font-size: 22px;
+  color: #555;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.fa-magnifying-glass,
+.fa-truck,
+.fa-file-invoice-dollar {
+  font-size: 50px;
+  color: #0e72ec;
+  text-align: center;
+  margin-top: 50px;
+}
+.col-3 p {
+  font-size: 22px;
+  text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
+
+  .col-1 .trust h1 {
+    max-width: 90%;
+    font-size: 50px;
+    color: #555;
+  }
+
+  .row .col-1 p {
+    max-width: 90%;
+    /* padding: 10px; */
+  }
+
+  .col-1 {
+    max-width: 100%;
+    /* background-color: aqua; */
+    padding: 20px;
+  }
+  .row .col-2 {
+    /* background-color: aqua; */
+    max-width: 80%;
+    min-width: 300px;
+    margin: auto 20px;
+  }
+
+  .grid-col-2 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    grid-area: 30px;
+  }
+
+  .btn-learn {
+    margin-bottom: 50px;
+  }
+
+  .grid-col-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-col-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

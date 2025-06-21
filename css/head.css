@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: darkblue;
+  position: fixed;
+}
+.section1 {
+  margin-top: 130px;
+}
+
+.container {
+  max-width: 1300px;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.navbar {
+  display: inline-flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 20px;
+}
+
+.menu nav {
+  display: flex;
+  gap: 50px;
+  color: white;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu nav a:hover {
+  color: #ff523b;
+}
+
+.logo h1 {
+  width: 250px;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  /* text-shadow: 2px 2px; */
+  /* background-color: pink; */
+  text-align: center;
+}
+
+.menu-item .lang {
+  width: 100px;
+  background-color: white;
+}
+
+.lang img {
+  width: 40px;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  color: white;
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+}
+.material-symbols-outlined {
+  color: white;
+  font-size: 30px;
+}
+
+#toggle {
+  display: none;
+}
+
+#navbar-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+  }
+
+  #toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* background-color: aqua; */
+    margin-left: 25px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #navbar-mobile {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: dimgray;
+    gap: 10px;
+    height: 0px;
+    color: #ff523b;
+    transition: all 0.5s;
+  }
+
+  #navbar-mobile.active {
+    height: 200px;
+
+    padding: 20px 30px;
+    background-color: #ff523b;
+  }
+
+  #navbar-mobile nav a :hover {
+    border: 1px solid #ff523b;
+  }
+
+  .logo h1 {
+    margin-left: 5px;
+  }
+}

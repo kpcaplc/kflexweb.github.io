@@ -1,0 +1,54 @@
+.sub-container {
+  width: 1250px;
+  background-color: whitesmoke;
+  margin: 120px auto;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+}
+.sub-container th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: cornflowerblue;
+}
+
+#table-control a {
+  color: brown;
+  text-decoration: underline;
+}
+
+.job-descr {
+  width: 90%;
+  background-color: white;
+  padding: 15px;
+  margin: auto;
+}
+
+ul {
+  margin-left: 30px;
+}
+.job-descr a {
+  text-decoration: none;
+
+  padding: 8px 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #ff523b;
+  transition: all 0.4s;
+}
+
+.job-descr a:hover {
+  transform: scale(0.9);
+}
+
+.head-title {
+  display: flex;
+  justify-content: space-between;
+}
